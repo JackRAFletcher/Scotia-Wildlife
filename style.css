@@ -1,0 +1,16 @@
+body
+ {
+  	background-color: yellow;
+ }
+ 
+ h1
+ {
+font-size: 30px;
+color:red;
+ }
+
+p
+{
+color:blue;
+font-size: 15px;
+}

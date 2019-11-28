@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        div {
+          background-image: url('bg1.jpg');
+        }
+        </style>
+        <head>
+
+            <!-- Header bar at the very top of the page, based off of w3schools example-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+          overflow: hidden;
+          background-color: rgba(33, 17, 122, 0.87);
+        }
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: rgb(41, 22, 148);
+        }
+        
+        /* align the relevant buttons to the right */
+.topnav-right {
+  float: right;
+}
+        </style>
+        </head>
+        <body>
+        
+        <div class="topnav">
+                <a href="home.html">
+                    <img alt="Home" src="logo.fw.png" width="25" height="25">
+                    </a>
+          <a class="active" href="about_us.html">About Us</a>
+          <a href="my_information.html">My Account</a>
+          <a href="browse_trips.html">Browse Trips</a>
+          <div class="topnav-right">
+                <a href="user_registration.html">Register</a>
+                <a href="user_login.html">Login</a>
+              </div>
+        </div>         
+<head>
+
+
+    <!--Image carousel found on w3schools, adapted to fit this project-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
+</head>
+<body>
+ 
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="eigg1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="rum1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="muck1.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+<!-- Bottom of the screen navigation bar, referenced from w3schools -->
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+        }
+        
+        .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 1px 10px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .navbar a:hover {
+          background: #f1f1f1;
+          color: black;
+        }
+                
+        .main {
+          padding: 0px;
+          margin-bottom: 1px;
+       
+        }
+
+        </style>
+        <!--style for the 'about us' and 'book a trip' buttons-->
+        <style>
+            .button {
+              background-color:rgba(33, 17, 122, 0.87);
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+              align-self: center;
+            }
+            </style>
+        </head>
+        <body>
+        
+        <div class="navbar">
+          <a href="home.html" class="active">Home</a>
+          <a href="staff_login_page.html" class="active">staff login page</a>
+          <a href="about_us.html" class="active">About us</a>
+          <a href="browse_trips.html" class="active">Browse Trips</a>
+        </div>
+
+        <a href="about_us.html" class="button">Learn About Us</a>
+        <a href="browse_trips.html" class="button">Book A Trip</a>
+</body>
+</html> 
