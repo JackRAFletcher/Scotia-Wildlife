@@ -8,13 +8,13 @@
 <h1>Customer Registration</h1>
 
 <?php
+  $username=$_POST['username'];
   $forename=$_POST['forename'];
   $surname=$_POST['surname'];
   $dateofbirth=$_POST['dateofbirth'];
   $email=$_POST['email'];
   $userpass=$_POST['userpass'];
   
-
   $db = mysql_connect('comp-server.uhi.ac.uk', 'pe19002984', 'jackfletcher');
   if (!$db)
   {
@@ -23,10 +23,10 @@
   }
   else
   {
-	mysql_select_db('pe19002984');
-    $query = "insert into CUSTOMER(forename,surname,dob,email,userpass) values ('$forename','$surname','$dateofbirth','$email','$userpass')";
    
-   $result = mysql_query($query);
+  mysql_select_db('pe19002984');
+  $query = "insert into CUSTOMER(username,forename,surname,dob,email,userpass) values ('$username','$forename','$surname','$dateofbirth','$email','$userpass')";
+  $result = mysql_query($query);
   if($result)
   	echo '<p>New Customer inserted</p>';
    else

@@ -31,16 +31,15 @@
   
   echo "<form action='triporderentry.php' method='post'>
   <p>Customer No<br>
-  <input type = 'text' name = 'customerno' value = '$customerno' readonly ></p>
+  <input type = 'text' name = 'username' value = '$username' readonly ></p>
   <p>Surname<br>
 <input type='text' name='surname' value = '$surname' ></p>
 <p>Forename<br>
 <input type='text' name='forename' value = '$forename' ></p>
 <p>Date of Birth<br>
-<input type='text' name='dateofbirth' value = '$dateofbirth' ></p>
+<input type='date' name='dob' value = '$dob' ></p>
 <p>Email<br>
 <input type='text' name='email' value = '$email' readonly ></p>
-<p>Discount<br>
 <input name='submit' type='submit' value='Continue to place an order'>
 </form>";
   }

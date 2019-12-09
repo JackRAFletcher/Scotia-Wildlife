@@ -1,12 +1,12 @@
 body
  {
-  	background-color: yellow;
+  	background-color: gray;
  }
  
  h1
  {
-font-size: 30px;
-color:red;
+font-size: 80px;
+color:rgb(0, 0, 0);
  }
 
 p
